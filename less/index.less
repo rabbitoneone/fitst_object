@@ -1,0 +1,298 @@
+body{
+    padding: 0 4vw 12vw;
+    background-color: #fff;
+}
+// 头部区域
+.header {
+    padding:2vw 0;
+    display:flex;
+    align-items:center;
+    .location{
+        color:#343434;
+        font-weight:550;
+        font-size:2.6667vw;
+    }
+    .search{
+        flex:1;
+        position:relative;
+        margin:0 3.3333vw;
+        &::before {
+            position:absolute;
+            content:"";
+            width:3.7333vw;
+            height:3.7333vw;
+            left:5.3333vw;
+            top:50%;
+            transform:translateY(-50%);
+            background: url(../images/header_search.png) no-repeat center ~'/' 2.6667vw;
+        }
+        input{
+            width:100%;
+            height:8vw;
+            background-color: #f7f7f7;
+            border:0.1333vw solid #f7f7f7;
+            border-radius:4vw;
+            text-indent:10.6667vw;
+            font-size:2.6667vw;
+        }
+
+    }
+    .message{
+        width:5.3333vw;
+        height:5.3333vw;
+   
+    }
+}
+// banner 区域
+.banner {
+    width:92vw;
+    margin-bottom:2.9333vw;
+    height:34.6667vw;
+}
+.strip {
+    display:flex;
+    justify-content:center;
+    height:3.0667vw;
+    background-image:linear-gradient(#f9f9f9,#f1f1f1);
+    li{
+        width:2vw;
+        height:0.6667vw;
+        background-color: #fff;
+        margin:2.4vw 2.6667vw 0;
+        &.active{
+            background-color: #303030;
+            width:2vw;
+        }
+    }
+}
+//  整租合租模块
+.rentnav {
+    display:flex;
+    padding-bottom:9.3267vw;
+    padding-top:5.0667vw;
+    background-image:linear-gradient(#f1f1f1,#f9f9f9);  
+  .rent_all{
+        flex:1;
+        margin-right:2.6666vw;
+        height:18.9333vw;
+        img{
+            width:44.6667vw;
+        }
+    }
+    .rent_together{
+        flex:1;
+        height:18.9333vw;
+        img{
+            width:44.6667vw;
+        }
+    }
+
+}
+// 超值优惠
+.discount{
+     margin-bottom:8vw;
+     .discount-tit{
+         display:flex;
+         font-size:5.2667vw;
+         color:#101010;
+         justify-content:space-between;
+         align-items:center;
+         margin-bottom:5.2667vw;
+         >span{
+             font-size:5.2667vw;
+             color:#979797;
+             font-family: "宋体";
+             margin-right:0.6667vw;
+         }
+     }    
+}
+.discount-body{
+    display:flex;
+  
+    .discount-content-l{
+        margin-right:2.6667vw;
+    }
+   
+}
+.discount-content{
+    flex:1; 
+        .discount-desc{
+        padding-top:3.3333vw;
+        font-size:2.1333vw;
+        >h4{
+            font-size:2.9333vw;
+        }
+        >p{
+            margin:1.6vw 0 2.6667vw;
+            color:#999;
+        }
+        >span{
+            color:#f49d0c;
+            font-weight:700;
+            font-size:2.9333vw;
+        }
+    }
+}
+// 广告位招募
+.advertise {
+    margin-bottom:9.3333vw;
+    height:15.2vw;
+}
+
+// 推荐模块
+.recommand{
+    margin-bottom:6.6667vw;
+    .more{
+        display:block;
+        width:69.3333vw;
+        height:9.3333vw;
+        text-align: center;
+        margin:0 auto;
+        line-height:9.3333vw;
+        background-color: #f2f2f3;
+        border-radius:4.6667vw;
+        font-size:2.9333vw;
+        color:#999;
+    }
+
+     
+    .recommand-tit{
+        display:flex;
+        align-items:center;
+        justify-content:space-between;
+        margin-bottom:6.6667vw;
+        h4{
+            font-size:2.9333vw;
+        }
+       >ul{
+        display:flex;
+            li{
+                position:relative;
+                margin-right:5.3333vw;
+                font-size:2.1333vw;
+                color:#999;
+             
+            &.active{
+                color:#3e3d3d;
+                font-weight:700;
+                }
+                &.active::after{
+                    visibility:visible;
+                }   
+            }
+       }
+    }
+}
+.tit-more{
+    li::after{
+        position:absolute;
+        content:'';
+        left:50%;
+        bottom:0;
+        transform:translate(-50%,1.0667vw);
+        width:2.6667vw;
+        height:0.5333vw;
+        visibility:hidden;
+        background: url(../images/home_list_selected@2x.png) no-repeat center ~'/' 2.6667vw;
+    }
+}
+
+.recommand-content{
+    margin-bottom:5.6vw;
+}
+.recommand-info{
+    display:flex;
+    .pic{
+        width:29.3333vw;
+        height:21.3333vw;
+        margin-right:4vw;
+    }
+}
+.recommand-desc{
+    flex:1;
+    display:flex;
+    height:24.5333vw;
+    flex-direction:column;
+    justify-content:space-between;
+    width:0;
+    margin-top:-0.8vw;
+    .desc-tit{
+        font-size:2.9333vw;
+        // margin-bottom:1.6vw;
+    }
+    p{
+        font-size:2.4vw;
+        color:#9d9d9d;
+        &:nth-child(2){
+            color:#999;
+            line-height: 4vw;
+            em{
+                display:inline-block;
+                height:1.86 67vw;
+                border-left:0.3vw solid #a5a5a5;
+                margin:-0.1333vw 1.3333vw;
+                }
+        }
+        &:nth-child(3){
+            padding-right:9.3333vw;
+            white-space: nowrap;
+            overflow:hidden;
+            text-overflow: ellipsis;
+        }
+        &:nth-child(4){
+            span{
+                display:inline-block;
+                // width:12vw;
+                // height:4vw;
+                padding:0.6667vw 3.3333vw;
+                border:0.1333vw solid #999;
+                border-radius:0.5333vw;
+                text-align: center;
+                margin-right:3.3333vw;
+                font-size:2.1333vw;
+            }
+            
+        }
+        &:nth-child(5){
+            color:#f39800;
+            span{
+                font-size:2.9333vw;
+                font-weight:700;
+                margin-right:1.3333vw; 
+            }
+        }
+    }
+
+}
+// 品牌故事
+.story{
+    height:22.4vw;
+    margin-bottom:3.3333vw;
+}
+// 底部
+.footer{
+    width:100%;
+    position:fixed;
+    font-size:2.4vw;
+    bottom:0;
+    left:0;
+    background-color: #fff;
+}
+.footer-info{
+    display:flex;
+    height:12vw;
+    li{
+        flex:1;
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        justify-content:center;
+        color:#e2e2e2;
+        .iconfont{
+            font-size:4vw;
+        }
+        &.active{
+            color:#242424;
+        }
+    }
+}
